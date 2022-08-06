@@ -8,31 +8,39 @@
 
 :root{
     --color-primary: #202040;
+    --color-primary-btn-contact: #202040;
     --color-secondary: #00A8CC;
     --color-white: #FFFFFF;
+    --color-white-btn-contact: #FFFFFF;
     --color-black: #000000;
     --color-grey0: #f8f8f8;
     --color-grey1: #dbe1e8;
     --color-grey2: #b2becd;
+    --color-grey2-progtxt: #b2becd;
     --color-grey3: #6c7983;
     --color-grey4: #454e56;
     --color-grey5: #1F4287;
+    --color-grey5-btn-contact: #1F4287;
     --color-grey6: #12181b;
     --br-sm-2: 14px;
     --box-shadow-1: 0 3px 15px rgba(0, 0, 0, 0.3);
 }
 
 .light-mode{
-    --color-primary: #00A8CC;
-    --color-secondary: #202040;
-    --color-white: #355764;
-    --color-black: #000000;
+    --color-primary: #3FA796;
+    --color-primary-btn-contact: #1597BB;
+    --color-secondary: #1F4287;
+    --color-white: #000000;
+    --color-white-btn-contact: #2C394B;
+    --color-black: #FFFFFF;
     --color-grey0: #f8f8f8;
-    --color-grey1: #dbe1e8;
+    --color-grey1: #000000;
     --color-grey2: #b2becd;
+    --color-grey2-progtxt: #000000;
     --color-grey3: #6c7983;
     --color-grey4: #454e56;
-    --color-grey5: #12181b;
+    --color-grey5: #1C0C5B;
+    --color-grey5-btn-contact: #1597BB;
     --color-grey6: #12181b;
 
 }
@@ -316,7 +324,7 @@ section{
                 display: flex;
                 align-items: center;
                 .prog-text{
-                    color: var(--color-grey2);
+                    color: var(--color-grey2-progtxt);
                     .bar{ // color of filled prog bar
                         color: var(--color-secondary);
                     }
@@ -523,8 +531,8 @@ section{
             a{
                 display: flex;
                 align-items: center;
-                color: var(--color-white);
-                background-color: var(--color-grey5);
+                color: var(--color-white-btn-contact);
+                background-color: var(--color-grey5-btn-contact);
                 cursor: pointer;
                 justify-content: center;
                 width: 50px;
@@ -533,9 +541,9 @@ section{
                 margin: 0 0.4rem;
                 transition: all 0.4s ease-in-out;
                 &:hover{
-                    background-color: var(--color-white);
+                    background-color: var(--color-white-btn-contact);
                     i{
-                        color: var(--color-primary);
+                        color: var(--color-primary-btn-contact);
                     }
                 }
                 i{
@@ -624,6 +632,9 @@ section{
             height: 100%;
             background-color: var(--color-secondary);
             transform: translateX(0);
+        }
+        .btn-icon{
+            color: var(--color-primary);
         }
     }
 }
