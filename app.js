@@ -10,7 +10,6 @@ function PageTransitions(){
             let currentBtn = document.querySelectorAll('.active-btn');
             currentBtn[0].classList.remove('active-btn');
             this.classList.add('active-btn');
-
         })
     }
 
