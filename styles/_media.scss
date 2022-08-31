@@ -66,6 +66,12 @@
         }
     }
 
+    .timeline{
+        grid-template-columns: 1fr;
+        grid-gap: 2rem;
+        padding-bottom: 3rem;
+    }
+
     .portfolios{
         grid-template-columns: 1fr;
         padding-bottom: 6rem;
