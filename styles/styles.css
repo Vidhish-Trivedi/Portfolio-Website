@@ -24,7 +24,7 @@
 
 .light-mode {
   --color-primary: #DAEAF1;
-  --color-secondary: #555555;
+  --color-secondary: #A66CFF;
   --color-white: #000000;
   --color-black: #FFFFFF;
   --color-grey0: #f8f8f8;
@@ -427,7 +427,7 @@ section {
   font-size: 1.2rem;
 }
 .timeline .timeline-item p {
-  color: var(--color-grey2);
+  color: var(--color-grey2-progtxt);
 }
 
 .portfolio-text {

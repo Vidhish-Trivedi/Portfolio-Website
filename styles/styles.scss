@@ -25,7 +25,7 @@
 // light-mode
 .light-mode{
     --color-primary: #DAEAF1;
-    --color-secondary: #555555;
+    --color-secondary: #A66CFF;
     --color-white: #000000;
     --color-black: #FFFFFF;
     --color-grey0: #f8f8f8;
@@ -425,7 +425,7 @@ section{
             }
         }
         p{
-            color: var(--color-grey2);
+            color: var(--color-grey2-progtxt);
         }
     }
 }
