@@ -35,11 +35,11 @@ function PageTransitions(){
     })
 
     // Toggle theme: dark/light.
-    // const themeBtn = document.querySelector('.theme-btn');
-    // themeBtn.addEventListener('click', () =>{
-    //     let element = document.body;
-    //     element.classList.toggle('light-mode');  // toggle on/off.
-    // })
+    const themeBtn = document.querySelector('.theme-btn');
+    themeBtn.addEventListener('click', () =>{
+        let element = document.body;
+        element.classList.toggle('light-mode');  // toggle on/off.
+    })
 }
 
 PageTransitions();

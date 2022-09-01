@@ -7,10 +7,8 @@
 
 :root {
   --color-primary: #202040;
-  --color-primary-btn-contact: #202040;
   --color-secondary: #00A8CC;
   --color-white: #FFFFFF;
-  --color-white-btn-contact: #FFFFFF;
   --color-black: #000000;
   --color-grey0: #f8f8f8;
   --color-grey1: #dbe1e8;
@@ -19,32 +17,26 @@
   --color-grey3: #6c7983;
   --color-grey4: #454e56;
   --color-grey5: #1F4287;
-  --color-grey5-btn-contact: #1F4287;
   --color-grey6: #12181b;
   --br-sm-2: 14px;
   --box-shadow-1: 0 3px 15px rgba(0, 0, 0, 0.3);
 }
 
-/*
-.light-mode{
-    --color-primary: #3FA796;
-    --color-primary-btn-contact: #1597BB;
-    --color-secondary: #1F4287;
-    --color-white: #000000;
-    --color-white-btn-contact: #2C394B;
-    --color-black: #FFFFFF;
-    --color-grey0: #f8f8f8;
-    --color-grey1: #000000;
-    --color-grey2: #b2becd;
-    --color-grey2-progtxt: #000000;
-    --color-grey3: #6c7983;
-    --color-grey4: #454e56;
-    --color-grey5: #1C0C5B;
-    --color-grey5-btn-contact: #1597BB;
-    --color-grey6: #12181b;
-
+.light-mode {
+  --color-primary: #DAEAF1;
+  --color-secondary: #555555;
+  --color-white: #000000;
+  --color-black: #FFFFFF;
+  --color-grey0: #f8f8f8;
+  --color-grey1: #000000;
+  --color-grey2: #b2becd;
+  --color-grey2-progtxt: #000000;
+  --color-grey3: #6c7983;
+  --color-grey4: #454e56;
+  --color-grey5: #6c7983;
+  --color-grey6: #12181b;
 }
-*/
+
 body {
   background-color: var(--color-primary);
   font-family: "Poppins", sans-serif;
@@ -168,31 +160,30 @@ section {
   pointer-events: none;
 }
 
-/*
-.theme-btn{
-    top: 5%;
-    right: 3%;
-    width: 55px;
-    height: 55px;
-    border-radius: 50%;
-    background-color: var(--color-grey4);
-    cursor: pointer;
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
-    transition: all 0.1s ease-in-out;
-    &:active{
-        transform: translateY(-3px);
-    }
-    i{
-        font-size: 1.4rem;
-        color: var(--color-grey2);
-        pointer-events: none;
-    }
+.theme-btn {
+  top: 5%;
+  right: 3%;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-color: var(--color-grey4);
+  cursor: pointer;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.1s ease-in-out;
 }
-*/
+.theme-btn:active {
+  transform: translateY(-3px);
+}
+.theme-btn i {
+  font-size: 1.4rem;
+  color: var(--color-grey2);
+  pointer-events: none;
+}
+
 .header-content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -431,7 +422,7 @@ section {
   font-weight: 600;
 }
 .timeline .timeline-item h5 span {
-  color: var(--color-grey2);
+  color: var(--color-grey2-progtxt);
   font-weight: 500;
   font-size: 1.2rem;
 }
@@ -475,8 +466,9 @@ section {
   align-items: center;
   flex-direction: column;
   opacity: 0;
-  transform: scale(0);
-  transition: all 0.4s ease-in-out;
+  transform: rotateY(180deg);
+  transform-style: preserve-3d;
+  transition: all 0.5s ease-in-out;
 }
 .portfolios .portfolio-item .hover-item h3 {
   font-size: 1.5rem;
@@ -565,8 +557,8 @@ section {
 .contact-content-container .left-contact .contact-icon a {
   display: flex;
   align-items: center;
-  color: var(--color-white-btn-contact);
-  background-color: var(--color-grey5-btn-contact);
+  color: var(--color-white);
+  background-color: var(--color-grey5);
   cursor: pointer;
   justify-content: center;
   width: 50px;
@@ -576,10 +568,10 @@ section {
   transition: all 0.4s ease-in-out;
 }
 .contact-content-container .left-contact .contact-icon a:hover {
-  background-color: var(--color-white-btn-contact);
+  background-color: var(--color-white);
 }
 .contact-content-container .left-contact .contact-icon a:hover i {
-  color: var(--color-primary-btn-contact);
+  color: var(--color-primary);
 }
 .contact-content-container .left-contact .contact-icon a i {
   display: flex;
@@ -745,7 +737,7 @@ section {
     padding-bottom: 6rem;
   }
   .portfolios .portfolio-item {
-    width: 90% !important;
+    width: 80% !important;
   }
   .contact-content-container {
     grid-template-columns: 1fr;

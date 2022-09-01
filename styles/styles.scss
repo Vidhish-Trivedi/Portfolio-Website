@@ -7,10 +7,8 @@
 
 :root{
     --color-primary: #202040;
-    --color-primary-btn-contact: #202040;
     --color-secondary: #00A8CC;
     --color-white: #FFFFFF;
-    --color-white-btn-contact: #FFFFFF;
     --color-black: #000000;
     --color-grey0: #f8f8f8;
     --color-grey1: #dbe1e8;
@@ -19,20 +17,16 @@
     --color-grey3: #6c7983;
     --color-grey4: #454e56;
     --color-grey5: #1F4287;
-    --color-grey5-btn-contact: #1F4287;
     --color-grey6: #12181b;
     --br-sm-2: 14px;
     --box-shadow-1: 0 3px 15px rgba(0, 0, 0, 0.3);
 }
 
 // light-mode
-/*
 .light-mode{
-    --color-primary: #3FA796;
-    --color-primary-btn-contact: #1597BB;
-    --color-secondary: #1F4287;
+    --color-primary: #DAEAF1;
+    --color-secondary: #555555;
     --color-white: #000000;
-    --color-white-btn-contact: #2C394B;
     --color-black: #FFFFFF;
     --color-grey0: #f8f8f8;
     --color-grey1: #000000;
@@ -40,12 +34,10 @@
     --color-grey2-progtxt: #000000;
     --color-grey3: #6c7983;
     --color-grey4: #454e56;
-    --color-grey5: #1C0C5B;
-    --color-grey5-btn-contact: #1597BB;
+    --color-grey5: #6c7983;
     --color-grey6: #12181b;
 
 }
-*/
 
 body{
     background-color: var(--color-primary);
@@ -161,7 +153,7 @@ section{
 }
 
 // theme-btn
-/*
+
 .theme-btn{
     top: 5%;
     right: 3%;
@@ -185,7 +177,7 @@ section{
         pointer-events: none;
     }
 }
-*/
+
 
 // Header content
 .header-content{
@@ -427,7 +419,7 @@ section{
             font-size: 1.3rem;
             font-weight: 600;
             span{
-                color: var(--color-grey2);
+                color: var(--color-grey2-progtxt);
                 font-weight: 500;
                 font-size: 1.2rem;
             }
@@ -473,8 +465,9 @@ section{
             flex-direction: column;
 
             opacity: 0;
-            transform: scale(0);
-            transition: all 0.4s ease-in-out;
+            transform: rotateY(180deg);
+            transform-style: preserve-3d;
+            transition: all 0.5s ease-in-out;
             
             h3{
                 font-size: 1.5rem;
@@ -566,8 +559,8 @@ section{
             a{
                 display: flex;
                 align-items: center;
-                color: var(--color-white-btn-contact);
-                background-color: var(--color-grey5-btn-contact);
+                color: var(--color-white);
+                background-color: var(--color-grey5);
                 cursor: pointer;
                 justify-content: center;
                 width: 50px;
@@ -576,9 +569,9 @@ section{
                 margin: 0 0.4rem;
                 transition: all 0.4s ease-in-out;
                 &:hover{
-                    background-color: var(--color-white-btn-contact);
+                    background-color: var(--color-white);
                     i{
-                        color: var(--color-primary-btn-contact);
+                        color: var(--color-primary);
                     }
                 }
                 i{
