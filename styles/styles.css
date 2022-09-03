@@ -381,19 +381,41 @@ section {
 
 .timeline {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   grid-gap: 2rem;
+  align-items: center;
+  justify-items: center;
   padding-bottom: 3rem;
+}
+.timeline .odd {
+  border-left: 2px solid var(--color-grey5);
+  align-items: flex-start;
+  justify-items: flex-start;
+  padding-left: 2rem;
+}
+.timeline .odd .timeline-icon {
+  position: absolute;
+  left: -27px;
+  top: -10px;
+}
+.timeline .even {
+  border-right: 2px solid var(--color-grey5);
+  align-items: flex-end;
+  justify-items: flex-end;
+  padding-right: 2rem;
+}
+.timeline .even .timeline-icon {
+  position: absolute;
+  right: -27px;
+  top: -10px;
 }
 .timeline .timeline-item {
   position: relative;
-  padding-left: 2rem;
-  border-left: 1px solid var(--color-grey5);
+  display: grid;
+  margin-bottom: 15px;
+  width: 55%;
 }
 .timeline .timeline-item .timeline-icon {
-  position: absolute;
-  left: -27px;
-  top: 0;
   background-color: var(--color-secondary);
   width: 50px;
   height: 50px;
