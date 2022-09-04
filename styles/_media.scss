@@ -1,5 +1,5 @@
 
-@media screen and (max-width: 1424px){
+@media screen and (max-width: 1080px){
     header{
         padding: 0;
     }
@@ -15,6 +15,7 @@
 
     .header-content{
         grid-template-columns: 1fr;
+        align-items: center;
         padding-bottom: 6rem;
     }
 
@@ -26,7 +27,7 @@
 
     .right-header{
         grid-row: 1;
-        width: 90%;
+        width: auto;
         margin: 0 auto;
         .name{
             font-size: 2.5rem !important;
@@ -34,8 +35,8 @@
     }
 
     .header-content .left-header .image{
-        margin: 0 auto;
-        width: 80%;
+        margin: 20px auto;
+        width: auto;
     }
 
     .about-content{
@@ -73,12 +74,12 @@
     }
 
     .portfolios{
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
         padding-bottom: 6rem;
     }
 
     .portfolios .portfolio-item{
-        width: 80% !important;
+        width: auto !important;
     }
 
     .contact-content-container{
@@ -125,10 +126,145 @@
         width: 100%;
         height: 60px;
         background-color: rgba(31, 66, 135, 0.5);
-        .control{
+        .my-control{
             margin: 1rem 0.3rem;
-            height: 20px;
-            width: 20px;
+            height: 50px;
+            width: 50px;
+        }
+    }
+    
+}
+
+@media screen and (max-width: 500px){
+    header{
+        padding: 0;
+    }
+    header .right-header{
+        padding: 0 !important;
+    }
+
+    .theme-btn{
+        width: 40px;
+        height: 40px;
+        top: 10px;
+    }
+
+    .header-content{
+        grid-template-columns: 1fr;
+        padding-bottom: 6rem;
+    }
+
+    .left-header{
+        .h-shape{
+            display: none;
+        }
+    }
+
+    .right-header{
+        grid-row: 1;
+        width: auto;
+        margin: 0 auto;
+        .name{
+            font-size: 2.5rem !important;
+        }
+    }
+
+    .header-content .left-header .image{
+        margin: 20px auto;
+        width: auto;
+    }
+
+    .about-content{
+        grid-template-columns: 1fr;
+        /////////////////////////////////
+        padding-left: 0 !important;
+        padding-right: 2rem !important;
+        margin-left: 0 !important;
+        margin-right: 2.5rem !important;
+        /////////////////////////////////
+        .right-about{
+            grid-template-columns: 1fr;
+            padding-top: 2.5rem;
+        }
+        .left-about{
+            padding-right: 0;
+            p{
+                padding-left: 0;
+            }
+        }
+    }
+
+    .about-skills{
+        .progress-bars{
+            grid-template-columns: 1fr;
+            grid-gap: 2rem;
+            padding-bottom: 3rem;
+        }
+    }
+
+    .timeline{
+        grid-template-columns: 1fr;
+        grid-gap: 2rem;
+        padding-bottom: 3rem;
+    }
+
+    .portfolios{
+        grid-template-columns: 1fr;
+        padding-bottom: 6rem;
+    }
+
+    .portfolios .portfolio-item{
+        width: auto !important;
+    }
+
+    .contact-content-container{
+        grid-template-columns: 1fr;
+        .right-contact{
+            margin-left: 0;
+            margin-top: 2.5rem;
+            padding-bottom: 3rem;
+        }
+    }
+    .contact-content-container .right-contact .input-control2{
+        flex-direction: column;
+    }
+    .contact-content-container .right-contact .input-control2 :last-child{
+        margin-left: 0;
+        margin-top: 1.5rem;
+    }
+
+
+    .section{
+        padding: 2rem 2.5rem !important;
+    }
+
+    .main-title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h2{
+            font-size: 2.5rem;
+            span{
+                font-size: 2.5rem;
+            }
+        }
+    }
+
+
+    .controls{
+        top: auto;
+        bottom: 0;
+        flex-direction: row;
+        justify-content: center;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        height: 60px;
+        background-color: rgba(31, 66, 135, 0.5);
+        .my-control{
+            margin: 1rem 0.3rem;
+            height: 50px;
+            width: 50px;
         }
     }
     
