@@ -19,6 +19,7 @@
     --mycolor-grey5: #1F4287;
     --mycolor-grey6: #12181b;
     --mybr-sm-2: 14px;
+    --my-card-border: rgb(42, 0, 148);
     --mybox-shadow-1: 0 3px 15px rgba(0, 0, 0, 0.3);
 }
 
@@ -36,7 +37,8 @@
     --mycolor-grey4: #454e56;
     --mycolor-grey5: #6c7983;
     --mycolor-grey6: #12181b;
-
+    --my-card-border: rgb(42, 0, 148);
+    --mybox-shadow-1: 0 3px 15px rgba(0, 0, 0, 0.3);
 }
 
 body{
@@ -261,7 +263,7 @@ section{
                 display: flex;
                 flex-direction: column;
                 .large-text{
-                    font-size: 2.3rem;
+                    font-size: 2.35rem;
                     font-weight: 700;
                     color: var(--mycolor-secondary);
                 }
@@ -269,7 +271,7 @@ section{
                     padding-left: 3rem;
                     position: relative;
                     text-transform: uppercase;
-                    font-size: 1.1rem;
+                    font-size: 1.25rem;
                     color: var(--mycolor-grey1);
                     letter-spacing: 2px;
                     &::before{
@@ -287,16 +289,34 @@ section{
     }
 
     .left-about{
-        padding-right: 5rem;
+        border: 1px solid var(--my-card-border);
+            border-radius: 5px;
+            transition: all 0.4s ease-in-out;
+            box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.1);
+        &:hover{
+            cursor: default;
+            background-color: transparentize($color: #3498db, $amount: 0.6);
+            border: 1px solid var(--mycolor-secondary);
+            box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.32);
+        }
+        background-color: transparentize($color: #3498db, $amount: 0.8);
+        margin-right: 5%;
+        padding-right: 3rem;
+        padding-left: 2rem;
+        padding-top: 3rem;
+        padding-bottom: 1rem;
+        border-radius: 20%;
         p{
             line-height: 2rem;
+            font-size: 1.3rem;
+            font-weight: 500;
+            text-align: justify;
             padding: 1rem;
             color: var(--mycolor-grey1);
         }
         h4{
-            font-size: 2rem;
+            font-size: 2.3rem;
             text-transform: uppercase;
-
         }
     }
 }
@@ -348,10 +368,7 @@ section{
                         width: 65%;
                     }
                     .c{
-                        width: 70%;
-                    }
-                    .cpp{
-                        width: 50%;
+                        width: 60%;
                     }
                 }
             }
@@ -361,7 +378,8 @@ section{
 
 .skill-title{
     text-transform: uppercase;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
+    font-weight: 600;
     text-align: center;
     padding: 3.5rem 0;
     position: relative;
@@ -409,7 +427,7 @@ section{
     .timeline-item{
         position: relative;
         display: grid;
-        margin-bottom: 15px;
+        margin-bottom: 10px;
         width: 60%;
         .timeline-icon{
             background-color: var(--mycolor-secondary);
@@ -428,7 +446,7 @@ section{
             background-color: var(--mycolor-grey5);
             border-radius: 15px;
             display: inline-block;
-            font-size: 0.8rem;
+            font-size: 0.9rem;
             text-transform: uppercase;
             font-weight: 600;
             color:#FFFFFF;
@@ -436,16 +454,17 @@ section{
         h5{
             padding: 1rem 0;
             text-transform: uppercase;
-            font-size: 1.3rem;
+            font-size: 1.5rem;
             font-weight: 600;
             span{
                 color: var(--mycolor-grey2-progtxt);
                 font-weight: 500;
-                font-size: 1.2rem;
+                font-size: 1.3rem;
             }
         }
         p{
             color: var(--mycolor-grey2-progtxt);
+            font-size: 1.3rem;
         }
     }
 }
@@ -529,6 +548,39 @@ section{
 .portfolio-item:hover .hover-item{
     opacity: 1;
     transform: scale(1);
+}
+
+// Blogs
+.certs-content{
+    min-width: 85vw;
+    min-height: 85vh;
+    .main-title{
+        margin: 0 auto;
+        text-align: center;
+    }
+    .certs{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 2rem;
+        margin-top: 3rem;
+        .cert-item{
+            position: relative;
+            background-color: var(--mycolor-grey5);
+            border-radius: 5px;
+            box-shadow: var(--mybox-shadow-1);
+            transition: all 0.4s ease-in-out;
+            &:hover{
+                box-shadow: 0 3px 15px rgba(0, 0, 0, 0.6);
+                transform: translate3d(0, -2px, -4px);
+                transition: all 0.4s ease-in-out;
+                img{
+                    filter: grayscale(0);
+                    transform: scale(1.1);
+                    box-shadow: 0 5px 15px rgba(0, 0, 0, 1);
+                }
+            }
+        }
+    }
 }
 
 // Contact section
