@@ -108,8 +108,7 @@ section{
         }
         100%{
             transform: translateY(0%);
-        }
-        
+        }   
     }
 }
 
@@ -262,7 +261,7 @@ section{
                 display: flex;
                 flex-direction: column;
                 .large-text{
-                    font-size: 2.6rem;
+                    font-size: 2.3rem;
                     font-weight: 700;
                     color: var(--mycolor-secondary);
                 }
@@ -270,7 +269,7 @@ section{
                     padding-left: 3rem;
                     position: relative;
                     text-transform: uppercase;
-                    font-size: 1.2rem;
+                    font-size: 1.1rem;
                     color: var(--mycolor-grey1);
                     letter-spacing: 2px;
                     &::before{
@@ -378,7 +377,6 @@ section{
 }
 
 // Timeline
-
 .timeline{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
