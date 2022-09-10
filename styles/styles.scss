@@ -308,14 +308,15 @@ section{
         border-radius: 20%;
         p{
             line-height: 2rem;
-            font-size: 1.3rem;
+            font-size: 1.5rem;
             font-weight: 500;
-            text-align: justify;
-            padding: 1rem;
+            text-align: left;
+            padding: 0 2.3rem 1rem;
             color: var(--mycolor-grey1);
         }
         h4{
-            font-size: 2.3rem;
+            padding: 1rem;
+            font-size: 2rem;
             text-transform: uppercase;
         }
     }
@@ -369,6 +370,12 @@ section{
                     }
                     .c{
                         width: 60%;
+                    }
+                    .java{
+                        width: 30%;
+                    }
+                    .js{
+                        width: 50%;
                     }
                 }
             }
@@ -550,7 +557,7 @@ section{
     transform: scale(1);
 }
 
-// Blogs
+// Certificates section
 .certs-content{
     min-width: 85vw;
     min-height: 85vh;
@@ -565,18 +572,42 @@ section{
         margin-top: 3rem;
         .cert-item{
             position: relative;
+            width: 100%;
+            object-fit: cover;
             background-color: var(--mycolor-grey5);
             border-radius: 5px;
             box-shadow: var(--mybox-shadow-1);
             transition: all 0.4s ease-in-out;
+            h3{
+                color: var(--mycolor-primary);
+                position: absolute;
+                width: 30%;
+                left: 35%;
+                top: 75%;
+                text-align: center;
+                font-size: 2rem;
+                font-weight: bold;
+                display: none;
+            }
+            img{
+                width: 100%;
+                height: 100%;
+                opacity: 1;
+            }
             &:hover{
                 box-shadow: 0 3px 15px rgba(0, 0, 0, 0.6);
-                transform: translate3d(0, -2px, -4px);
                 transition: all 0.4s ease-in-out;
                 img{
-                    filter: grayscale(0);
-                    transform: scale(1.1);
+                    width: 100%;
+                    height: 100%;
+                    opacity: 0.3;
+                    transition: all 0.4s ease-in-out;
                     box-shadow: 0 5px 15px rgba(0, 0, 0, 1);
+                    cursor: pointer;
+                }
+                h3{
+                    transition: all 0.4s ease-in-out;
+                    display: initial;
                 }
             }
         }
