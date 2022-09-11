@@ -82,6 +82,15 @@
         width: auto !important;
     }
 
+    .certs-content .certs{
+        grid-template-columns: repeat(2, 1fr);
+        padding-bottom: 6rem;
+    }
+
+    .certs .cert-item{
+        width: auto !important;
+    }
+
     .contact-content-container{
         grid-template-columns: 1fr;
         .right-contact{
@@ -214,6 +223,15 @@
     }
 
     .portfolios .portfolio-item{
+        width: auto !important;
+    }
+
+    .certs-content .certs{
+        grid-template-columns: 1fr;
+        padding-bottom: 6rem;
+    }
+
+    .certs .cert-item{
         width: auto !important;
     }
 

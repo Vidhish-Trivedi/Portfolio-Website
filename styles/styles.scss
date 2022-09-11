@@ -559,8 +559,6 @@ section{
 
 // Certificates section
 .certs-content{
-    min-width: 85vw;
-    min-height: 85vh;
     .main-title{
         margin: 0 auto;
         text-align: center;
@@ -575,7 +573,6 @@ section{
             width: 100%;
             object-fit: cover;
             background-color: var(--mycolor-grey5);
-            border-radius: 5px;
             box-shadow: var(--mybox-shadow-1);
             transition: all 0.4s ease-in-out;
             h3{
