@@ -476,7 +476,7 @@ section{
     .portfolio-disp-item{
         position: relative;
         display: grid;
-        min-height: 35vh;
+        min-height: 40vh;
         margin-bottom: 2.5rem;
         width: 90%;
         .portfolio-disp-tech{
@@ -501,6 +501,34 @@ section{
         p{
             color: var(--mycolor-grey2-progtxt);
             font-size: 1.3rem;
+        }
+        .icons{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .icon{
+                background-color: var(--mycolor-primary);
+                border-radius: 50%;
+                width: 40px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 1rem;
+                cursor: pointer;
+                transition: all 0.4s ease-in-out;
+                i{
+                    font-size: 1.5rem;
+                    color: var(--mycolor-white);
+                    margin: 0 1rem;
+                }
+                &:hover{
+                    background-color: var(--mycolor-white);
+                    i{
+                        color: var(--mycolor-primary);
+                    }
+                }
+            }
         }
     }
 }
@@ -620,6 +648,34 @@ section{
         p{
             color: var(--mycolor-grey2-progtxt);
             font-size: 1.3rem;
+        }
+        .icons{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .icon{
+                background-color: var(--mycolor-primary);
+                border-radius: 50%;
+                width: 40px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 1rem;
+                cursor: pointer;
+                transition: all 0.4s ease-in-out;
+                i{
+                    font-size: 1.5rem;
+                    color: var(--mycolor-white);
+                    margin: 0 1rem;
+                }
+                &:hover{
+                    background-color: var(--mycolor-white);
+                    i{
+                        color: var(--mycolor-primary);
+                    }
+                }
+            }
         }
     }
 }
