@@ -6,7 +6,7 @@
 }
 
 :root {
-  --mycolor-primary: #202040;
+  --mycolor-primary: #082032;
   --mycolor-secondary: #00A8CC;
   --mycolor-white: #FFFFFF;
   --mycolor-black: #000000;
@@ -36,6 +36,7 @@
   --mycolor-grey4: #454e56;
   --mycolor-grey5: #6c7983;
   --mycolor-grey6: #12181b;
+  --mybr-sm-2: 14px;
   --my-card-border: rgb(42, 0, 148);
   --mybox-shadow-1: 0 3px 15px rgba(0, 0, 0, 0.3);
 }
@@ -190,6 +191,7 @@ section {
 .header-content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 0;
   min-height: 100vh;
 }
 .header-content .left-header {
@@ -210,16 +212,17 @@ section {
           clip-path: polygon(0 0, 53% 0, 83% 100%, 0% 100%);
 }
 .header-content .left-header .image {
-  border-radius: var(--mybr-sm-2);
-  height: 90%;
-  width: 68%;
-  margin-left: 4rem;
+  border-radius: 25px;
+  height: 63%;
+  width: 49%;
+  margin-left: 6rem;
   background-color: var(--mycolor-black);
   transition: all 0.4s ease-in-out;
 }
 .header-content .left-header .image img {
   width: 100%;
   height: 100%;
+  border-radius: 25px;
   -o-object-fit: cover;
      object-fit: cover;
   transition: all 0.4s ease-in-out;
@@ -235,10 +238,13 @@ section {
   padding-right: 18rem;
 }
 .header-content .right-header .name {
-  font-size: 3rem;
+  font-size: 4rem;
 }
 .header-content .right-header .name span {
   color: var(--mycolor-secondary);
+}
+.header-content .right-header h2 {
+  font-size: 2.5rem;
 }
 .header-content .right-header p {
   margin: 1.5rem 0;
@@ -410,7 +416,7 @@ section {
   position: relative;
   display: grid;
   margin-bottom: 10px;
-  width: 90%;
+  width: 40%;
 }
 .timeline .timeline-item .timeline-icon {
   background-color: var(--mycolor-secondary);
@@ -791,7 +797,7 @@ section {
   justify-content: space-between;
 }
 .contact-content-container .left-contact .contact-info p {
-  margin: 0.3rem 0 !important;
+  margin: 0.3rem 3rem !important;
   padding: 0 !important;
 }
 .contact-content-container .left-contact .contact-info .icon {
@@ -865,12 +871,14 @@ section {
 }
 .contact-content-container .right-contact .submit-btn {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 .btn-container {
   display: flex;
   align-self: flex-start;
+  align-items: center;
+  text-align: center;
   margin: 0 3%;
 }
 
@@ -885,6 +893,8 @@ section {
   display: flex;
   align-items: center;
   overflow: hidden;
+  min-height: 2.8rem;
+  min-width: 8rem;
 }
 .main-btn .btn-text {
   padding: 0 2rem;
