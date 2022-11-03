@@ -2,7 +2,23 @@ const sections = document.querySelectorAll('.section');
 const sectBtns = document.querySelectorAll('.controls');
 const sectBtn = document.querySelectorAll('.my-control');
 const allSections = document.querySelectorAll('.main-content');
+const hiddenElements = document.querySelectorAll('.hidden');
+const hiddenFadeElements = document.querySelectorAll('.hidden-fade');
 
+// For animations.
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        // console.log(entry);
+        if(entry.isIntersecting){
+            entry.target.classList.add('show');
+        }
+        else{
+            entry.target.classList.remove('show');
+        }
+    });
+});
+
+// For page transitions.
 function PageTransitions(){
     // Button click active class
     for(let i = 0; i < sectBtn.length; i++){
@@ -13,7 +29,6 @@ function PageTransitions(){
         })
     }
 
-    ////////////////////////////////////////////////////////////////////////////////////
     // sections active class
     allSections.forEach(sect =>{
         sect.addEventListener('click', (e) =>{
@@ -42,4 +57,7 @@ function PageTransitions(){
     })
 }
 
+
 PageTransitions();
+hiddenElements.forEach((el) => observer.observe(el));
+hiddenFadeElements.forEach((el) => observer.observe(el));
