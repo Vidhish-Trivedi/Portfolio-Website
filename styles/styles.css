@@ -351,7 +351,7 @@ section {
   grid-row-gap: 2%;
   grid-column-gap: 2%;
   display: grid;
-  grid-template-columns: 9% 9% 9% 9% 9%;
+  grid-template-columns: 9% 9% 9% 9% 9% 9%;
   width: 100%;
   padding-bottom: 4rem;
 }
@@ -1033,7 +1033,7 @@ section {
     grid-row-gap: 2%;
     grid-column-gap: 2%;
     display: grid;
-    grid-template-columns: 12% 12% 12%;
+    grid-template-columns: 12% 12% 12% 12%;
     width: 100%;
     padding-bottom: 4rem;
   }
@@ -1203,7 +1203,7 @@ section {
     grid-row-gap: 2%;
     grid-column-gap: 2%;
     display: grid;
-    grid-template-columns: 18% 18%;
+    grid-template-columns: 18% 18% 18%;
     width: 100%;
     padding-bottom: 4rem;
   }
