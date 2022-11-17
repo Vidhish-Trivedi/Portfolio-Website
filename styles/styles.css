@@ -107,10 +107,12 @@ section {
 
 .active {
   display: block;
-  -webkit-animation: scaleAnim 1s ease-in-out;
-          animation: scaleAnim 1s ease-in-out;
+  -webkit-animation: scaleAnimY 0.1s ease-in-out;
+          animation: scaleAnimY 0.1s ease-in-out;
+  -webkit-animation: scaleAnimX 0.9s ease-in-out;
+          animation: scaleAnimX 0.9s ease-in-out;
 }
-@-webkit-keyframes scaleAnim {
+@-webkit-keyframes scaleAnimY {
   0% {
     transform: translateY(-100%);
   }
@@ -118,12 +120,28 @@ section {
     transform: translateY(0%);
   }
 }
-@keyframes scaleAnim {
+@keyframes scaleAnimY {
   0% {
     transform: translateY(-100%);
   }
   100% {
     transform: translateY(0%);
+  }
+}
+@-webkit-keyframes scaleAnimX {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@keyframes scaleAnimX {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
   }
 }
 
@@ -575,7 +593,7 @@ section {
 .portfolios .portfolio-item .hover-item h3 {
   font-size: 1.5rem;
   color: var(--mycolor-white);
-  margin-bottom: 1.5rem;
+  margin: 1rem;
 }
 .portfolios .portfolio-item .hover-item .icons {
   display: flex;
@@ -701,17 +719,6 @@ section {
   box-shadow: var(--mybox-shadow-1);
   transition: all 0.4s ease-in-out;
 }
-.certs-content .certs .cert-item h3 {
-  color: var(--mycolor-primary);
-  position: absolute;
-  width: 30%;
-  left: 35%;
-  top: 75%;
-  text-align: center;
-  font-size: 2rem;
-  font-weight: bold;
-  display: none;
-}
 .certs-content .certs .cert-item img {
   width: 100%;
   height: 100%;
@@ -736,7 +743,7 @@ section {
 .certs-content .certs .cert-item .hover-cert h3 {
   font-size: 1.5rem;
   color: var(--mycolor-white);
-  margin-bottom: 1.5rem;
+  margin: 1rem;
 }
 .certs-content .certs .cert-item .hover-cert .icons {
   display: flex;
@@ -769,7 +776,7 @@ section {
 }
 
 .certs-content .cert-item:hover .hover-cert {
-  opacity: 0.5;
+  opacity: 1;
   transform: scale(1);
 }
 
@@ -886,12 +893,6 @@ section {
   opacity: 0;
   filter: blur(5px);
   transform: translateX(-100%);
-  transition: all 1s;
-}
-
-.hidden-fade {
-  opacity: 0;
-  filter: blur(5px);
   transition: all 1s;
 }
 
