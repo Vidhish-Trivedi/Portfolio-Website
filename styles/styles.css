@@ -75,6 +75,7 @@ section {
   left: 0;
   top: 0;
   padding: 3rem 7rem;
+  padding-bottom: 0.5rem;
   transform: translateY(-100%) scale(0);
   transition: all 0.4s ease-in-out;
   background-color: var(--mycolor-primary);
@@ -369,7 +370,7 @@ section {
   grid-row-gap: 2%;
   grid-column-gap: 2%;
   display: grid;
-  grid-template-columns: 9% 9% 9% 9% 9% 9%;
+  grid-template-columns: 9% 9% 9% 9% 9% 9% 9%;
   width: 100%;
   padding-bottom: 4rem;
 }
@@ -973,6 +974,14 @@ section {
   color: var(--mycolor-secondary);
 }
 
+.my-footer {
+  position: relative;
+  align-items: center;
+  text-align: center;
+  padding-top: 2rem;
+  font-size: 0.8rem;
+}
+
 @media screen and (max-width: 1080px) {
   header {
     padding: 0;
@@ -1034,7 +1043,7 @@ section {
     grid-row-gap: 2%;
     grid-column-gap: 2%;
     display: grid;
-    grid-template-columns: 12% 12% 12% 12%;
+    grid-template-columns: 10% 10% 10% 10% 10%;
     width: 100%;
     padding-bottom: 4rem;
   }
