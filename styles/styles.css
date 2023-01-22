@@ -473,6 +473,7 @@ section {
 .timeline .timeline-item p {
   color: var(--mycolor-grey2-progtxt);
   font-size: 1.3rem;
+  text-align: left;
 }
 
 .portfolio-text {
