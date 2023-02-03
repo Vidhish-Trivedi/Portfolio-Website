@@ -554,7 +554,8 @@ section{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 2rem;
-    margin-top: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
     .portfolio-item{
         position: relative;
         img{
@@ -698,11 +699,12 @@ section{
 }
 
 .certs-content{
+    margin-bottom: 2rem;
     .certs{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 2rem;
-        margin-top: 3rem;
+        margin-top: 1rem;
         .cert-item{
             position: relative;
             width: 100%;

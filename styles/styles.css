@@ -564,7 +564,8 @@ section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem;
-  margin-top: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
 }
 .portfolios .portfolio-item {
   position: relative;
@@ -705,11 +706,14 @@ section {
   color: var(--mycolor-primary);
 }
 
+.certs-content {
+  margin-bottom: 2rem;
+}
 .certs-content .certs {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem;
-  margin-top: 3rem;
+  margin-top: 1rem;
 }
 .certs-content .certs .cert-item {
   position: relative;
