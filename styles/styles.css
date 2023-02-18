@@ -47,7 +47,6 @@ body {
   font-size: 1.1rem;
   color: var(--mycolor-white);
   transition: all 0.4s ease-in-out;
-  max-width: -webkit-max-content;
   max-width: -moz-max-content;
   max-width: max-content;
 }
@@ -67,7 +66,6 @@ header {
 
 section {
   min-height: 100vh;
-  max-width: -webkit-max-content;
   max-width: -moz-max-content;
   max-width: max-content;
   width: 100%;
@@ -108,18 +106,8 @@ section {
 
 .active {
   display: block;
-  -webkit-animation: scaleAnimY 0.1s ease-in-out;
-          animation: scaleAnimY 0.1s ease-in-out;
-  -webkit-animation: scaleAnimX 0.9s ease-in-out;
-          animation: scaleAnimX 0.9s ease-in-out;
-}
-@-webkit-keyframes scaleAnimY {
-  0% {
-    transform: translateY(-100%);
-  }
-  100% {
-    transform: translateY(0%);
-  }
+  animation: scaleAnimY 0.1s ease-in-out;
+  animation: scaleAnimX 0.9s ease-in-out;
 }
 @keyframes scaleAnimY {
   0% {
@@ -127,14 +115,6 @@ section {
   }
   100% {
     transform: translateY(0%);
-  }
-}
-@-webkit-keyframes scaleAnimX {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(0%);
   }
 }
 @keyframes scaleAnimX {
@@ -244,11 +224,6 @@ section {
   border-radius: 25px;
   -o-object-fit: cover;
      object-fit: cover;
-  transition: all 0.4s ease-in-out;
-  filter: grayscale(100%);
-}
-.header-content .left-header .image img:hover {
-  filter: grayscale(0%);
 }
 .header-content .right-header {
   display: flex;
@@ -740,7 +715,6 @@ section {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  opacity: 0;
   transform: rotateX(90deg);
   transform-style: preserve-3d;
   transition: all 0.4s ease-in-out;
@@ -781,7 +755,6 @@ section {
 }
 
 .certs-content .cert-item:hover .hover-cert {
-  opacity: 0.5;
   transform: scale(1);
 }
 

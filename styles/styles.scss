@@ -225,11 +225,6 @@ section{
                 height: 100%;
                 border-radius: 25px;
                 object-fit: cover;
-                transition: all .4s ease-in-out;
-                filter: grayscale(100%);
-                &:hover{
-                    filter: grayscale(0%);
-                }
             }
         }
     }
@@ -730,7 +725,7 @@ section{
                 align-items: center;
                 flex-direction: column;
 
-                opacity: 0;
+                
                 transform: rotateX(90deg);
                 transform-style: preserve-3d;
                 transition: all 0.4s ease-in-out;
@@ -775,7 +770,6 @@ section{
 }
             
 .certs-content .cert-item:hover .hover-cert{
-    opacity: 0.5;
     transform: scale(1);
 }
 
