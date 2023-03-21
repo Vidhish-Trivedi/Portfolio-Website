@@ -107,7 +107,7 @@ section {
 .active {
   display: block;
   animation: scaleAnimY 0.1s ease-in-out;
-  animation: scaleAnimX 0.9s ease-in-out;
+  animation: fadeIn 1s ease-in-out;
 }
 @keyframes scaleAnimY {
   0% {
@@ -117,12 +117,12 @@ section {
     transform: translateY(0%);
   }
 }
-@keyframes scaleAnimX {
+@keyframes fadeIn {
   0% {
-    transform: translateX(-100%);
+    opacity: 0;
   }
   100% {
-    transform: translateX(0%);
+    opacity: 100%;
   }
 }
 
@@ -461,7 +461,7 @@ section {
 
 .portfolio-disp {
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 1rem;
   align-items: center;
   justify-items: center;
@@ -874,6 +874,13 @@ section {
   transition: all 1s;
 }
 
+.hidden-right {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(100%);
+  transition: all 1s;
+}
+
 .show {
   opacity: 1;
   filter: blur(0);
@@ -1036,6 +1043,9 @@ section {
     grid-template-columns: 1fr;
     grid-gap: 2rem;
     padding-bottom: 3rem;
+  }
+  .portfolio-disp {
+    grid-template-columns: repeat(1, 1fr);
   }
   .portfolios {
     grid-template-columns: repeat(2, 1fr);

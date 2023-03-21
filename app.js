@@ -3,6 +3,7 @@ const sectBtns = document.querySelectorAll('.controls');
 const sectBtn = document.querySelectorAll('.my-control');
 const allSections = document.querySelectorAll('.main-content');
 const hiddenElements = document.querySelectorAll('.hidden');
+const hiddenElements_right = document.querySelectorAll('.hidden-right');
 
 // For animations.
 const observer = new IntersectionObserver((entries) => {
@@ -59,3 +60,4 @@ function PageTransitions(){
 
 PageTransitions();
 hiddenElements.forEach((el) => observer.observe(el));
+hiddenElements_right.forEach((el) => observer.observe(el));
