@@ -18,6 +18,10 @@ const observer = new IntersectionObserver((entries) => {
     });
 });
 
+function scrollToTop(){
+    window.scrollTo({top: 0, behavior: 'smooth'});
+}
+
 // For page transitions.
 function PageTransitions(){
     // Button click active class
@@ -45,6 +49,7 @@ function PageTransitions(){
                 })
                 const element = document.getElementById(id);
                 element.classList.add('active');
+                scrollToTop();
             }
         })
     })
