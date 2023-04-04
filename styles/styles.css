@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -445,10 +446,24 @@ section {
   font-weight: 500;
   font-size: 1.3rem;
 }
-.timeline .timeline-item p {
+.timeline .timeline-item ul {
+  list-style: none;
+  position: relative;
+  padding: 0;
+  margin: 0;
   color: var(--mycolor-grey2-progtxt);
   font-size: 1.3rem;
   text-align: left;
+}
+.timeline .timeline-item li {
+  padding-left: 1em;
+}
+.timeline .timeline-item li:before {
+  position: absolute;
+  content: "•";
+  color: var(--mycolor-white);
+  font-size: 1.3rem;
+  left: 0;
 }
 
 .portfolio-text {
