@@ -495,7 +495,7 @@ section {
 .portfolio-disp .portfolio-disp-item {
   position: relative;
   display: grid;
-  min-height: 40vh;
+  min-height: 55vh;
   margin-bottom: 2.5rem;
   width: 90%;
 }
